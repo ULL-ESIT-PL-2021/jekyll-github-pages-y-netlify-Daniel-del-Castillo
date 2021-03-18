@@ -1,3 +1,6 @@
+desc "run rake test"
+task default: ["test"]
+
 require 'html-proofer'
 desc 'test links in the build web site'
 task :test do
