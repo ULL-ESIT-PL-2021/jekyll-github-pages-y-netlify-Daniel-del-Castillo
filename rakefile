@@ -11,3 +11,9 @@ task :test do
     }
     HTMLProofer.check_directory("./_site", options).run
 end
+
+desc 'build for netlify'
+task :build_netlify do
+    sh "mv _config_netlify.yml _config.yml"
+    sh "jekyll build"
+end
