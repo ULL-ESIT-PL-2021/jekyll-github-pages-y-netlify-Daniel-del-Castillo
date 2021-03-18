@@ -272,3 +272,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  
+  - scope:
+      path: posts
+      type: posts
+    values:
+      layout: default
+      permalink: posts/:title
