@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: single
 ---
-<h1> {{ page.name }}</h1>
 {{content}}
 
-<h2>Posts</h2>
+<h2>Posts referencing the language:</h2>
 <ul>
-  {% assign filtered_blogs = site.blogs | where: 'language', page.name %}
+  {% assign filtered_blogs = site.categories["blogs"] | where: 'language', page.name %}
   {% for blog in filtered_blogs %}
     <li><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></li>
   {% endfor %}

@@ -1,5 +1,4 @@
 ---
-layout: single
 name: JavaScript
 title: JavaScript
 ---
