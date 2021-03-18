@@ -1,7 +1,7 @@
 # main links
 main:
-  # - title: "About me"
-  #   url: 
+  - title: "Home"
+    url: /
   - title: "Blogs"
     url: /blogs
   - title: "Languages"
@@ -10,8 +10,6 @@ main:
 sidebar-sample:
   - title: "Links of interest"
     children:
-      - title: "Repository"
-        url: https://github.com/ULL-ESIT-PL-2021/jekyll-github-pages-y-netlify-Daniel-del-Castillo
       - title: "Github account"
         url: https://github.com/Daniel-del-Castillo
       - title: "Assignment description"
