@@ -1,0 +1,12 @@
+---
+layout: single
+---
+{{content}}
+<h4>This post talks about the following language:</h4>
+<p>
+  {% assign lang = site.languages | where: 'name', page.language | first %}
+  {% if lang %}
+    <a href="{{ site.baseurl }}{{ lang.url }}">{{ lang.name }}</a>
+  {% endif %}
+</p>
+

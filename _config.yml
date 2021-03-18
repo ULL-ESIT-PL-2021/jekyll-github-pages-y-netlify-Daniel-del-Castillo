@@ -141,7 +141,12 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
-  - vendor
+  - vendor- scope:
+      path: posts
+      type: posts
+    values:
+      layout: default
+      permalink: posts/:titl
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
@@ -274,8 +279,12 @@ defaults:
       related: true
   
   - scope:
-      path: posts
+      path: blogs
       type: posts
     values:
       layout: default
-      permalink: posts/:title
+
+collections:
+  languages:
+    output: true
+    permalink: /:collection/:name
