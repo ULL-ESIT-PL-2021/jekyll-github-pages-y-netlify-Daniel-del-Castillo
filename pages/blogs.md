@@ -4,7 +4,7 @@ permalink: /blogs
 title: Blogs
 ---
 
-## Lista de Blogs Publicados
+## List of published blogs
 
 {% assign blogs = site.categories["blogs"] %}
 

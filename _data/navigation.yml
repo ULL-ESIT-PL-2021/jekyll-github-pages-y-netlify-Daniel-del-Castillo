@@ -6,3 +6,14 @@ main:
     url: /blogs
   - title: "Languages"
     url: /languages
+    
+sidebar-sample:
+  - title: "Links of interest"
+    children:
+      - title: "Repository"
+        url: https://github.com/ULL-ESIT-PL-2021/jekyll-github-pages-y-netlify-Daniel-del-Castillo
+      - title: "Github account"
+        url: https://github.com/Daniel-del-Castillo
+      - title: "Assignment description"
+        url: https://ull-esit-gradoii-pl.github.io/practicas/jekyll-netlify
+    
