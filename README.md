@@ -9,3 +9,13 @@ En esta práctica se ha hecho uso de las siguientes herramientas:
 * [Netlify](https://www.netlify.com/). Otro servicio de hosting para páginas estáticas
 * [Liquid](https://jekyllrb.com/docs/step-by-step/02-liquid/). El lenguaje de 'templating' usado por Jekyll
 * [Html proofer](https://github.com/gjtorikian/html-proofer). Una herramienta que permite testear ficheros HTML
+## Despliegue de la página
+La página se ha desplegado en [GitHub Pages](https://ull-esit-pl-2021.github.io/jekyll-github-pages-y-netlify-Daniel-del-Castillo/) y en [Netlify](https://daniel-page.netlify.app/)
+Para el despliegue en GitHub Pages hubo que configurar correctamente los campus url y baseurl de la configuración de Jekyll. [Esta explicación](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-base-url) ayudó mucho. A la hora de desplegar en Netlify esa configuración también tenía que alterarse, por lo que se creó otra rama que solo difiere en esta cuestión para su despliegue en netlify
+## Testeo de la página
+Para testear la página se ha usado html-proofer, también se ha añadido CI para que se ejecute cada vez que hay un push.
+## Uso de categorías y collections
+En la página se ha creado una categoría llamada `blogs` y una colección llamada `languages`, para aprender como funciona cada una
+## Uso de layouts
+Se ha creado un layout para `blogs` y un layout para `languages`
+
