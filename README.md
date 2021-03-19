@@ -17,5 +17,23 @@ Para testear la página se ha usado html-proofer, también se ha añadido CI par
 ## Uso de categorías y collections
 En la página se ha creado una categoría llamada `blogs` y una colección llamada `languages`, para aprender como funciona cada una
 ## Uso de layouts
-Se ha creado un layout para `blogs` y un layout para `languages`
+Se ha creado un layout para `blogs` y un layout para `languages`. Estos poseen distintas carecterísticas, por ejemplo los posts de tipo `language` poseen una lista de los post que hacen referencia a ese lenguaje.
+## 404
+Se ha creado una página personalizada de 404 que te muestra una foto de un samoyedo y una cita aleatoria.
+## Páginas resumen
+También se han creado dos páginas que, respectivamente, agrupan todos los `blogs` y todos los `languages` haciendo uso de liquid.
+## Uso de Liquid
+Aquí se puede ver un ejemplo de uso de Liquid que permite a una página listar links para cada uno de los `blogs` que hay
+```html
+{% assign blogs = site.categories["blogs"] %}
 
+<ul reversed>
+{%- for blog in blogs %}
+    <li>  
+        <a href="{{site.baseurl}}{{ blog.url }}">{{ blog.title }}</a> 
+    </li>
+{%- endfor %}
+</ul>
+```
+## Añadir comentarios
+También se ha añadido un sistema de comentarios usando [utterances](https://github.com/utterance/utterances) como proveedor
